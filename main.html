@@ -38,7 +38,8 @@
         <div id="div6" class="draggable" draggable="true" style="background-image: url('img6.jpg');"></div>
     </div>
     <script>
-        const draggables = document.querySelectorAll('.draggable');
+        const draggable = Cypress.$("#drag3")[0];
+
         let draggedItem = null;
 
         draggables.forEach(item => {
